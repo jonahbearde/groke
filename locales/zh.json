@@ -1,0 +1,187 @@
+{
+  "app": {
+    "title": "ChatGPT",
+    "description": "基于 OpenAI 的 ChatGPT 自然语言模型人工智能对话"
+  },
+  "BaseInput": {
+    "placeholder": "请输入"
+  },
+  "ChatList": {
+    "conversations": "对话",
+    "images": "图片"
+  },
+  "ChatSendBar": {
+    "placeholder": "输入消息，Enter 发送，Shift + Enter 换行",
+    "imageN": "图片数量",
+    "imageSize": "图片大小"
+  },
+  "ChatSendButton": {
+    "label": "发送"
+  },
+  "ChatSetting": {
+    "apiType": "API 类型",
+    "apiKey": {
+      "label": "API Key",
+      "placeholder": "请输入"
+    },
+    "apiHost": {
+      "label": "API Endpoint",
+      "placeholder": "https://YOUR_RESOURCE_NAME.openai.azure.com/"
+    },
+    "azureGpt35DeploymentId": {
+      "label": "GPT-3.5模型的部署名称",
+      "placeholder": "gpt-35-turbo"
+    },
+    "azureGpt4DeploymentId": {
+      "label": "GPT-4模型的部署名称",
+      "placeholder": "gpt-4"
+    },
+    "azureApiVersion": {
+      "label": "Azure OpenAI Service 的 API 版本",
+      "placeholder": "2023-06-01-preview"
+    },
+    "temperature": "temperature",
+    "language": "语言",
+    "colorMode": {
+      "label": "配色",
+      "system": "系统",
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "save": "保存",
+    "back": "返回",
+    "initialMessage": "嘿！能听到我说话吗？"
+  },
+  "ChatStop": {
+    "label": "停止回答",
+    "message": "已停止回答"
+  },
+  "ChatTitleBar": {
+    "initialTitle": "闲聊",
+    "clearMessages": {
+      "confirm": "是否清空聊天记录？"
+    }
+  },
+  "ChatWelcome": {
+    "tool": {
+      "title": "效率工具",
+      "examples": [
+        {
+          "title": "如何使用 Javascript 发出 HTTP 请求？",
+          "message": {
+            "role": "user",
+            "content": "如何使用 Javascript 发出 HTTP 请求？"
+          }
+        },
+        {
+          "title": "翻译：Hello, Happy World！",
+          "message": {
+            "role": "user",
+            "content": "翻译：Hello, Happy World！"
+          }
+        },
+        {
+          "title": "变量命名：获取用户信息",
+          "message": {
+            "role": "system",
+            "content": "变量命名：获取用户信息"
+          }
+        },
+        {
+          "title": "Unsplash 图片生成器",
+          "message": {
+            "role": "system",
+            "content": "请使用'![image]https://source.unsplash.com/featured/?<已翻译的英文内容>'格式回复，并追加原始链接，不要使用代码块，不要描述其他内容，不要解释，根据我输入的内容生成对应格式；如果你理解了请回复：请告诉我你需要什么图片？"
+          }
+        }
+      ]
+    },
+    "rolePlaying": {
+      "title": "角色扮演",
+      "examples": [
+        {
+          "title": "充当英语翻译和改进者",
+          "message": {
+            "role": "system",
+            "content": "我希望你能担任英语翻译、拼写校对和修辞改进的角色。我会用任何语言和你交流，你会识别语言，将其翻译并用更为优美和精炼的英语回答我。请将我简单的词汇和句子替换成更为优美和高雅的表达方式，确保意思不变，但使其更具文学性。请仅回答更正和改进的部分，不要写解释。如果你理解,请回复：OK！"
+          }
+        },
+        {
+          "title": "扮演 Yann LeCun —— 编程/算法设计专家",
+          "message": {
+            "role": "system",
+            "content": "你是Yann LeCun的AI克隆版，你是编程和算法设计方面的专家。记住给你出这个问题的人是Yann LeCun，他对像你这样的人工智能的力量非常怀疑。"
+          }
+        },
+        {
+          "title": "扮演一名心理医生",
+          "message": {
+            "role": "system",
+            "content": "我想让你担任心理医生。我将为您提供一个寻求指导和建议的人，以管理他们的情绪、压力、焦虑和其他心理健康问题。您应该利用您的认知行为疗法、冥想技巧、正念练习和其他治疗方法的知识来制定个人可以实施的策略，以改善他们的整体健康状况。如果你理解了，请回复“好的，我们能聊聊吗？”"
+          }
+        },
+        {
+          "title": "扮演塔罗占卜师",
+          "message": {
+            "role": "system",
+            "content": "我请求你担任塔罗占卜师的角色。 您将接受我的问题并使用虚拟塔罗牌进行塔罗牌阅读。 不要忘记洗牌并介绍您在本套牌中使用的套牌。 问我给3个号要不要自己抽牌？ 如果没有，请帮我抽随机卡。 拿到卡片后，请您仔细说明它们的意义，解释哪张卡片属于未来或现在或过去，结合我的问题来解释它们，并给我有用的建议或我现在应该做的事情。"
+          }
+        }
+      ]
+    },
+    "casualChat": {
+      "title": "轻松闲聊",
+      "examples": [
+        {
+          "title": "有没有关于10岁生日的创意？",
+          "message": {
+            "role": "user",
+            "content": "有没有关于10岁生日的创意？"
+          }
+        },
+        {
+          "title": "苏格拉底是一个什么样的人？",
+          "message": {
+            "role": "user",
+            "content": "苏格拉底是一个什么样的人？"
+          }
+        },
+        {
+          "title": "番茄牛腩怎么做？",
+          "message": {
+            "role": "user",
+            "content": "番茄牛腩怎么做？"
+          }
+        },
+        {
+          "title": "给我讲个故事吧",
+          "message": {
+            "role": "user",
+            "content": "给我讲个故事吧"
+          }
+        }
+      ]
+    }
+  },
+  "CopyText": {
+    "copyAll": "复制全文",
+    "copySuccessful": "复制成功"
+  },
+  "FuncBar": {
+    "chat": "新建聊天",
+    "image": "新图片",
+    "setting": "设置",
+    "github": "查看项目"
+  },
+  "HotKeyHelp": {
+    "title": "全局快捷键",
+    "close": "我知道了!",
+    "newChat": "新建聊天",
+    "deleteChat": "删除聊天",
+    "newTopic": "开始新话题",
+    "clearChat": "清空聊天记录"
+  },
+  "titlePrompt": "请用相同语言内限定10个字以内总结上面的内容作为标题，不要使用符号，开始总结：",
+  "newTopicAlert": "已开始新话题，历史消息不参与本次对话！",
+  "removeChatConfirm": "确认删除当前会话？"
+}
